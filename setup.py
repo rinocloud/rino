@@ -14,7 +14,8 @@ setup(
     test_suite='rinocloud.test.all',
     tests_require=['mock'],
     install_requires=[
-        "rinocloud",
+        "rinocloud>=0.0.8",
+        "gitpython",
         "keyring",
         "secretstorage",
         "dbus-python",

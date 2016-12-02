@@ -4,18 +4,18 @@ import os
 
 default_config = {}
 
-def set(key, val):
-    cwd = os.getcwd()
-    dir_path = os.path.join(cwd, '.rino')
-    config_path = os.path.join(dir_path, 'config.json')
+config_file_name = 'rino.json'
 
-    if not os.path.isdir(dir_path):
-        click.echo('Not a rino repository.')
-        return False
+def get_config_path():
+    dir_path = os.getcwd()
+    return os.path.join(dir_path, config_file_name)
+
+def set(key, val):
+    config_path = get_config_path()
 
     if not os.path.exists(config_path):
         with open(config_path, 'w') as outfile:
-            outfile.write(json.dumps(config.default_config))
+            outfile.write(json.dumps(default_config))
             return False
 
     else:
@@ -27,13 +27,7 @@ def set(key, val):
 
 
 def get(key):
-    cwd = os.getcwd()
-    dir_path = os.path.join(cwd, '.rino')
-    config_path = os.path.join(dir_path, 'config.json')
-
-    if not os.path.isdir(dir_path):
-        click.echo('Not a rino repository.')
-        return False
+    config_path = get_config_path()
 
     if not os.path.exists(config_path):
         return None
