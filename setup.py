@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name="rino",
-    version="0.0.2",
+    version="0.0.3",
     packages=find_packages(),
     include_package_data=True,
     description='Rinocloud python bindings',
@@ -17,8 +17,6 @@ setup(
         "rinocloud>=0.0.8",
         "gitpython",
         "keyring",
-        "secretstorage",
-        "dbus-python",
         "Click"
     ],
     entry_points='''
