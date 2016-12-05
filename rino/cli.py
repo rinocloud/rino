@@ -1,3 +1,4 @@
+import pkg_resources
 import click
 import rino
 
@@ -5,6 +6,13 @@ import rino
 @click.group()
 def cli():
     pass
+
+@cli.command()
+def version():
+    """
+        Prints the version of this tool
+    """
+    click.echo("rino version %s" % pkg_resources.get_distribution("rino").version)
 
 # init
 @cli.command()
