@@ -8,7 +8,7 @@ CLI tool to save data-science notebooks on Rinocloud.
 
 ```
 pip install rino
- ```
+```
 
 ## Getting started
 
@@ -16,26 +16,26 @@ First you will want to login to Rinocloud so that you can push data.
 
 ```
 rino login
- ```
+```
 
 The, in your target directory, initialize a repository
 
 ```
 rino init
- ```
+```
 
 This will create a `rino.json` file.
 Then set the Rinocloud folder you want to push notebooks to.
 
 ```
 rino remote set data/notebooks
- ```
+```
 
 Then push a new notebook (can be any filetype)
 
 ```
 rino notebook push some_notebook.ipynb
- ```
+```
 
 If a git repo exists, rino will automatically gather the remote origin, the
 branch and the current commit hash. If the repo is not clean, the push will be
@@ -49,7 +49,7 @@ When you've edited your notebook, and you want it updated:
 
 ```
 rino notebook update some_notebook.ipynb
- ```
+```
 
 Same rules apply as push with respect to git.
 
