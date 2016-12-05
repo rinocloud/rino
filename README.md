@@ -63,7 +63,16 @@ To see the git information of an existing local notebook just type:
 
 ```
 rino git show notebook.md
+
+>>> git info for notebook.md
+>>> remote: origin git@github.com:eoinmurray/example-simulation.git
+>>> branch: master
+>>> commit: d00faed8fc1754db2f459135128bdf62c6f6a234
+>>> message: 
+>>>         wave packet video
 ```
+
+So its easy to fetch a notebooks and checkout the exact commit used with the notebook.
 
 To open up the remote folder type:
 
