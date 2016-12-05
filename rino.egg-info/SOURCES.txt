@@ -4,7 +4,7 @@ rino/__init__.py
 rino/browse.py
 rino/cli.py
 rino/config.py
-rino/git.py
+rino/git_tools.py
 rino/initialize.py
 rino/login.py
 rino/notebook.py

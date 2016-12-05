@@ -6,5 +6,5 @@ from rino import (
     browse,
     config,
     utils,
-    git
+    git_tools
 )

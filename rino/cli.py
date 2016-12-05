@@ -154,4 +154,4 @@ def show(file):
     """
         Show the git commit for the notebook.
     """
-    rino.git.show(file)
+    rino.git_tools.show(file)
