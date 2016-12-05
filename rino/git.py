@@ -20,3 +20,4 @@ def show(path):
     click.echo('remote: %s %s' % (git_info["remote_name"], git_info["remote_urls"][0]))
     click.echo('branch: %s' % git_info["branch"])
     click.echo('commit: %s' % git_info["commit"])
+    click.echo('message: \n\t%s' % git_info["message"])

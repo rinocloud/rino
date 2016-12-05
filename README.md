@@ -64,3 +64,9 @@ To see the git information of an existing local notebook just type:
 ```
 rino git show notebook.md
 ```
+
+To open up the remote folder type:
+
+```
+rino browse
+```

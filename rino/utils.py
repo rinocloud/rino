@@ -46,7 +46,8 @@ def get_git_meta(repo):
                 'remote_name': git_remote.name,
                 'remote_urls': list(git_remote.urls),
                 'branch': repo.active_branch.name,
-                'commit': repo.head.commit.hexsha
+                'commit': repo.head.commit.hexsha,
+                'message': repo.head.commit.message
             }
         except ValueError as e:
             click.echo('Cant add git informatoin. git has no remote set.')
